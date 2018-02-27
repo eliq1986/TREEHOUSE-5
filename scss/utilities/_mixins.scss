@@ -1,0 +1,16 @@
+@mixin links {
+  a {
+ text-decoration: none;
+ color: black;
+ &:hover {
+   background-color: $primary-colorT;
+   color: white;
+ }
+ }
+}
+
+@mixin pStyle  {
+  @content;
+  line-height: 1.5em;
+  font-size: 1em;
+  }

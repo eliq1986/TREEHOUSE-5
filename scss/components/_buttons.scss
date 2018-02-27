@@ -1,7 +1,33 @@
 //Buttons:
-.btn--default
-.btn--success
-.btn--error
-.btn--warning
-.btn--info
-.theme__colors
+.btn--default {
+width: 100%;
+background-color: $seconday-colorL;
+padding: .8em;
+margin-top: 1em;
+display: block;
+border-radius: 5px;
+border: none;
+font-size: 1em;
+color: white;
+text-transform: uppercase;
+}
+.btn--success {
+ @extend .btn--default;
+ background-color: $green;
+}
+.btn--error {
+  @extend .btn--default;
+  background-color: $red;
+}
+.btn--warning {
+  @extend .btn--default;
+  background-color: $orange;
+}
+.btn--info {
+  @extend .btn--default;
+  background-color: $purple;
+}
+.theme__colors {
+
+
+}

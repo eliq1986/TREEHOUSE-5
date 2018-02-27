@@ -1,16 +1,52 @@
 //Grid:
-.container 
-.grid__row
-.grid__col--2
-.grid__col--3
-.grid__col--4
-.grid__col--5
-.grid__col--6
-.grid__col--7
-.grid__col--8
-.grid__col--9
-.grid__col--10
-.grid__col--11
-.grid__col--12
-.centered
-.theme__colors
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+.grid__row {
+  .grid__col--12 {
+    margin-top: 3em;
+
+}
+
+ .grid__col--9 {
+  margin-bottom: 4em;
+}
+.grid__col--12 theme__colors {
+  background-color: yellow;
+}
+}
+.grid__col--2 {}
+.grid__col--3 {
+}
+.grid__col--4{
+}
+.grid__col--5 {
+
+}
+.grid__col--6 {
+
+}
+.grid__col--7 {
+
+}
+.grid__col--8 {
+
+}
+.grid__col--9 {
+  ul.nav{
+   padding-left: 0;
+ }
+}
+.grid__col--10 {}
+.grid__col--11 {}
+.grid__col--12 {
+   div.card {
+    margin-bottom: 7em;
+    text-align: left;
+  @include pStyle;
+
+  }
+}
+.centered {}
+.theme__colors {}

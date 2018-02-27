@@ -1,0 +1,13 @@
+ * {
+ font-family: $primary-fontS;
+ }
+
+ p {
+  @include pStyle;
+  margin-bottom: 1.5em;
+
+    a {
+      text-decoration: none;
+      color: $seconday-colorL;
+    }
+ }

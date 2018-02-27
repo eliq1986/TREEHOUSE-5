@@ -1,4 +1,17 @@
 //Image:
-.img--logo
-.img--frame
-.img--avatar
+.img--logo {
+  display: block;
+  margin: 20px auto;
+}
+.img--frame {
+ @extend .img--logo;
+ margin-top: 4em;
+ margin-bottom: 2em;
+ border: .5px solid black;
+ padding: 10px;
+ width: 90%;
+}
+.img--avatar {
+ @extend .img--logo;
+ margin-bottom: 3em;
+}

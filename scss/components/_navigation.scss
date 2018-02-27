@@ -1,2 +1,17 @@
 // Navigation:
-.nav__item 
+.nav__item  {
+  text-align: center;
+  padding: 5px;
+  color: black;
+  font-size: 1.1em;
+  display: block;
+ list-style-type: none;
+ @include links;
+ a {
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+
+ }
+
+}

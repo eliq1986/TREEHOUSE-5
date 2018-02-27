@@ -1,6 +1,22 @@
 //Typography:
-.container
-.link
-.blockquote
-.headline--primary
-.headline--secondary
+.container {}
+.link {
+
+}
+.blockquote {
+  font-size: 1.4em;
+  border-left: 10px solid $primary-colorT;
+  padding-left: 30px;
+  border-radius: 5px;
+  margin-bottom: 2.5em;
+}
+.headline--primary {
+  color: $primary-colorT;
+  padding: 5px;
+  margin-left: 10px;
+}
+.headline--secondary {
+  font-weight: lighter;
+  margin-top: 3.5em;
+  margin-bottom: 0;
+}
