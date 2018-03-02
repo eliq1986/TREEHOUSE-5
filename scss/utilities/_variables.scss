@@ -2,15 +2,52 @@
 /* ==========================================================================
                         COLORS
 ========================================================================== */
-$primary-colorT: #89ffd3;
-$seconday-colorL: #4bf2ef;
+$primary-colorT: #61edc7;
+$seconday-colorL: #2de3ff;
 $green: #6fdc6f;
 $red: #ff6666;
 $orange: orange;
 $purple: #bf80ff;
 $white: white;
+$lighter: lighten(blue, 30%);
 
 /* ==========================================================================
                         FONTS
 ========================================================================== */
 $primary-fontS: arial, "Times New Roman", courier, serif;
+
+/* ==========================================================================
+                        BUTTON COLORS
+========================================================================== */
+$login: $seconday-colorL;
+$default: $seconday-colorL;
+$success: $green;
+$error: $red;
+$warning: orange;
+$info: purple;
+  /* ==========================================================================
+                          GRID COLORS
+  ========================================================================== */
+$grid__col-6: #42b0c4;
+$grid__col-4: $seconday-colorL;
+$grid__col-3: lighten($purple, 10%);
+$grid__col-5: lighten($green, 10%);
+$grid__col-7: lighten($red, 10%);
+$grid__col-8: lighten($orange, 20%);
+/* ==========================================================================
+                        WIDTH AND BREAKPOINTS
+========================================================================== */
+$max-width: 1000px;
+
+$break-xs: 575px;
+$break-s: 576px;
+$break-m: 769px;
+$break-l: 992px;
+/* ==========================================================================
+                        WIDTH AND BREAKPOINTS
+========================================================================== */
+$font-weight--thin       : 100;
+$font-weight--light      : 300;
+$font-weight--medium     : 400;
+$font-weight--bold       : 700;
+$font-weight--ultra-bold : 900;

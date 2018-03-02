@@ -1,16 +1,38 @@
 @mixin links {
   a {
- text-decoration: none;
- color: black;
- &:hover {
-   background-color: $primary-colorT;
-   color: white;
- }
+   text-decoration: none;
+   color: black;
+     &:hover {
+       background-color: $primary-colorT;
+       color: white;
+  }
  }
 }
 
 @mixin pStyle  {
-  @content;
-  line-height: 1.5em;
+    @content;
+    line-height: 1.5em;
+    font-size: 1em;
+    }
+
+@mixin center {
+    width: 90%;
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+}
+@mixin flexy($disp: flex, $dir: null, $just: null, $items: null, $self: null) {
+  display: $disp;
+  flex-direction: $dir;
+  justify-content: $just;
+  align-items: $items;
+  align-self: $self;
+}
+@mixin gridbars {
+  padding: .8em;
+  display: block;
+  border-radius: 5px;
+  border: none;
   font-size: 1em;
+  @content;
   }

@@ -1,52 +1,95 @@
 //Grid:
 .container {
-  width: 85%;
-  margin: 0 auto;
+    width: 85%;
+    margin: 0 auto;
 }
+
 .grid__row {
-  .grid__col--12 {
-    margin-top: 3em;
+  @media (min-width: 1400px) {
+ .grid__col--3.grid__col--9 {
+   display: flex;
+   flex-direction: row;
+ }
+}
+}
+ .grid__col--12.theme__colors {
+     background-color: $primary-colorT;
+     margin-bottom: 3em;
+    @include gridbars;
+     margin-top: 3em;}
+
+
+
+.grid__col--9.theme__colors {
+     margin-bottom: 4em;
+     @include gridbars;
+
+   }
+
+.grid__col--2{
 
 }
 
- .grid__col--9 {
-  margin-bottom: 4em;
-}
-.grid__col--12 theme__colors {
-  background-color: yellow;
-}
-}
-.grid__col--2 {}
-.grid__col--3 {
-}
-.grid__col--4{
-}
-.grid__col--5 {
+.grid__col--3.theme__colors {
+     background-color: $grid__col-3;
+     @include gridbars;
+     margin-bottom: .4em;
+     &:last-child {
+     margin-bottom: 2em;
+
+ }
 
 }
-.grid__col--6 {
+.grid__col--4.theme__colors{
+    background-color: $grid__col-4;
+    @include gridbars;
+    margin: .3em;
+    &:last-child {
+    margin-bottom: 2em;
 
 }
-.grid__col--7 {
+}
+.grid__col--5.theme__colors {
+    background-color: $grid__col-5;
+    @include gridbars;
+    margin-bottom: .4em;
 
 }
-.grid__col--8 {
+.grid__col--6.theme__colors {
+    background-color: $grid__col-6;
+    @include gridbars;
+    &:last-child {
+    margin-bottom: 2em;
+    margin-top: .4em;
+
+    }
+}
+.grid__col--7.theme__colors {
+    background-color: $grid__col-7;
+    @include gridbars;
+    margin-bottom: 2em;
+
+}
+.grid__col--8.theme__colors {
+    background-color: $grid__col-8;
+    @include gridbars;
+
 
 }
 .grid__col--9 {
-  ul.nav{
-   padding-left: 0;
- }
+
 }
 .grid__col--10 {}
 .grid__col--11 {}
 .grid__col--12 {
-   div.card {
+
+    div.card {
     margin-bottom: 7em;
     text-align: left;
-  @include pStyle;
+     @include pStyle;
 
-  }
+   }
 }
-.centered {}
-.theme__colors {}
+.grid__col--7.theme__colors.centered{
+   margin-bottom: 2em;
+ }
