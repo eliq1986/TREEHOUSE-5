@@ -10,8 +10,20 @@
    border: .5px solid black;
    padding: 10px;
    width: 90%;
+   @media (min-width: 1400px) {
+     display: inline;
+     float: left;
+     width: 30%;
+     margin: 0;
+     margin-top: 50px;
+     margin-bottom: 40px;
+     margin-left: 30px;
+   }
 }
 .img--avatar {
    @extend .img--logo;
    margin-bottom: 3em;
+
+
+
 }

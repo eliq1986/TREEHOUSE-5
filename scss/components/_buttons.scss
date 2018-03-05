@@ -2,27 +2,47 @@
 .btn--default {
   background-color: $seconday-colorL;
   @extend %btn;
+  @media (min-width: 1400px) {
+    width: 160px;
+    
+  }
 
 
 }
 .btn--success {
    background-color: $success;
    @extend %btn;
+   @media (min-width: 1400px) {
+     width: 160px;
+   }
+
 
 }
 .btn--error {
   background-color: $error;
   @extend %btn;
+  @media (min-width: 1400px) {
+    width: 160px;
+  }
+
 
 }
 .btn--warning {
   background-color: $warning;
   @extend %btn;
+  @media (min-width: 1400px) {
+    width: 160px;
+  }
+
 
 }
 .btn--info {
   background-color: $info;
   @extend %btn;
+  @media (min-width: 1400px) {
+    width: 160px;
+  }
+
 
 }
 .theme__colors {

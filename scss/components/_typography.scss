@@ -2,8 +2,15 @@
 .container {}
 .link {
   text-decoration: none;
-  color: $seconday-colorL
+  color: $seconday-colorL;
+  @media(min-width: 1400px) {
+    &:first-child {
+      float: left;
+
+  }
 }
+}
+
 .blockquote {
   font-size: 1.4em;
   border-left: 10px solid $primary-colorT;
@@ -20,4 +27,12 @@
   font-weight: lighter;
   margin-top: 3.5em;
   margin-bottom: 0;
+  @media(min-width: 1400px) {
+   margin-top: 0;
+   &:nth-child(2) {
+    padding-left: 100px;
+
+ }
+
+  }
 }

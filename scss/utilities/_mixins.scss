@@ -36,3 +36,39 @@
   font-size: 1em;
   @content;
   }
+
+  /* ==========================================================================
+                          MEDIA QUERIES MIXIN
+  ========================================================================== */
+@mixin mq ($break) {
+  @if $break == "small" {
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
+      @content;
+    }
+  }
+  @else if $break == "medium" {
+    @media (min-width: $brkpoint-md + 1) {
+     @content;
+}
+}
+  @else if $break == "large" {
+    @media (min-width: $brkpoint-lg) {
+      @content;
+    }
+  }
+}
+
+  /* ==========================================================================
+                          BEM SELECTORS
+  ========================================================================== */
+
+@mixin  m($modifier) {
+      &--#{$modifier} {
+        @content;
+      }
+}
+@mixin  e($element) {
+      &__#{$element} {
+        @content;
+      }
+}

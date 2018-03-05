@@ -2,22 +2,28 @@
 .container {
     width: 85%;
     margin: 0 auto;
+    max-width: 1200px;
 }
 
 .grid__row {
-  @media (min-width: 1400px) {
- .grid__col--3.grid__col--9 {
-   display: flex;
-   flex-direction: row;
- }
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
-}
+
+
+
+
+
  .grid__col--12.theme__colors {
      background-color: $primary-colorT;
      margin-bottom: 3em;
     @include gridbars;
-     margin-top: 3em;}
+     margin-top: 3em;
 
+     }
 
 
 .grid__col--9.theme__colors {
@@ -29,6 +35,13 @@
 .grid__col--2{
 
 }
+.grid__col--3 {
+
+
+
+ }
+
+
 
 .grid__col--3.theme__colors {
      background-color: $grid__col-3;
@@ -38,23 +51,67 @@
      margin-bottom: 2em;
 
  }
-
+ @media (min-width: 1400px) {
+   float: left;
+   width: 250px;
+   text-align: center;
+   margin-bottom: 3em;
+   &:nth-child(2) {
+     margin-left: 20px;
+     margin-right: 10px;
+ }
+ &:nth-child(3) {
+   margin-left: 20px;
+   margin-right: 20px;
+}
+}
 }
 .grid__col--4.theme__colors{
     background-color: $grid__col-4;
     @include gridbars;
-    margin: .3em;
+    margin-top: .5em;
+    margin-bottom: .3em;
     &:last-child {
     margin-bottom: 2em;
 
+
+}
+@media (min-width: 1400px) {
+  float: left;
+  margin-right:0;
+  width: 360px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 3em;
+  &:nth-child(2) {
+    margin-left: 9px;
+    margin-right: 7px;
+  }
 }
 }
 .grid__col--5.theme__colors {
     background-color: $grid__col-5;
     @include gridbars;
     margin-bottom: .4em;
-
+    @media (min-width: 1400px) {
+      text-align: center;
+      float: left;
+      width: 315px;
+      margin-bottom: 3em;
+    }
 }
+.grid__col--6 {
+  @media (min-width: 1400px) {
+    .img--avatar {
+      display: inline;
+      margin: 0;
+      margin-left: 400px;
+      margin-top: 50px;
+
+    }
+  }
+}
+
 .grid__col--6.theme__colors {
     background-color: $grid__col-6;
     @include gridbars;
@@ -62,22 +119,64 @@
     margin-bottom: 2em;
     margin-top: .4em;
 
-    }
+        }
+        @media (min-width: 1400px) {
+          text-align: center;
+          width: 47%;
+          float: left;
+          margin-bottom: 3em;
+          &:last-child {
+          margin: 0 0 0 16px;
+}
+}
 }
 .grid__col--7.theme__colors {
     background-color: $grid__col-7;
     @include gridbars;
     margin-bottom: 2em;
+    @media (min-width: 1400px) {
+      text-align: center;
+      float: right;
+      width: 800px;
+      margin-bottom: 3em;
+    }
 
 }
 .grid__col--8.theme__colors {
     background-color: $grid__col-8;
     @include gridbars;
-
-
+    @media (min-width: 1400px) {
+      text-align: center;
+     float: left;
+     width: 746px;
+     margin-bottom: 3em;
+  }
+}
+.grid__col--8 {
+  @media (min-width: 1400px) {
+  .card {
+    float: left;
+    width: 60%;
+  }
+}
 }
 .grid__col--9 {
+  @media(min-width: 1400px) {
 
+    .nav {
+      padding-top: 10px;
+      margin-top: 20px;
+
+  width: 50%;
+  float: right;
+  &__item {
+    display: inline-block;
+  }
+
+
+  }
+
+}
 }
 .grid__col--10 {}
 .grid__col--11 {}
@@ -89,7 +188,24 @@
      @include pStyle;
 
    }
+    @media (min-width: 1400px){
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 3em 0;
+
+  }
+
+
 }
-.grid__col--7.theme__colors.centered{
+
+.grid__col--7.theme__colors.centered {
    margin-bottom: 2em;
+   @media (min-width: 1400px){
+      text-align: center;
+     width: 70%;
+     margin-right: 170px;
+     margin-bottom: 7em;
+
+   }
  }

@@ -6,7 +6,7 @@ $primary-colorT: #61edc7;
 $seconday-colorL: #2de3ff;
 $green: #6fdc6f;
 $red: #ff6666;
-$orange: orange;
+$orange: #fca471;
 $purple: #bf80ff;
 $white: white;
 $lighter: lighten(blue, 30%);
@@ -23,7 +23,7 @@ $login: $seconday-colorL;
 $default: $seconday-colorL;
 $success: $green;
 $error: $red;
-$warning: orange;
+$warning: darken($orange, 5%);
 $info: purple;
   /* ==========================================================================
                           GRID COLORS
@@ -33,7 +33,7 @@ $grid__col-4: $seconday-colorL;
 $grid__col-3: lighten($purple, 10%);
 $grid__col-5: lighten($green, 10%);
 $grid__col-7: lighten($red, 10%);
-$grid__col-8: lighten($orange, 20%);
+$grid__col-8: darken($orange, 5%);
 /* ==========================================================================
                         WIDTH AND BREAKPOINTS
 ========================================================================== */
@@ -42,7 +42,7 @@ $max-width: 1000px;
 $break-xs: 575px;
 $break-s: 576px;
 $break-m: 769px;
-$break-l: 992px;
+$break-l: 1400px;
 /* ==========================================================================
                         WIDTH AND BREAKPOINTS
 ========================================================================== */

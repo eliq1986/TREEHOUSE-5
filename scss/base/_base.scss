@@ -5,9 +5,13 @@
  p {
     @include pStyle;
     margin-bottom: 1.5em;
+    @media(min-width: 1400px) {
+      
+    }
 
  }
 
 ul  {
   padding-left: 0;
+
 }
